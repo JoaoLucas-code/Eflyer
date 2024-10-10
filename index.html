@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    </body>
         <header>
-            <nav>
+            <nav class="top-nav">
                 <ul>
                     <li><a href="#">Best Saller</a></li>
                     <li><a href="#">Gift Ideas</a></li>
@@ -18,10 +18,112 @@
                     <li><a href="#">Customer Service</a></li>
                 </ul>
             </nav>
-        </header>
-            <div class="container">
-                <img id="Eflyer" src="img/footer-logo.png" alt="Eflyer">
+            <div class="main-header">
+                <div class="menu-tog">
+                    <img src="img/toggle-icon.png" alt="Menu">
+                </div>
+                <div class="logo-container">
+                    <img id="Eflyer" src="img/footer-logo.png" alt="Eflyer">
+                </div>
+                <div class="search-bar">
+                    <select class="categoria">
+                        <option value="all">All Categories</option>
+                    </select>
+                    <input type="text" placeholder="Search this blog">
+                    <button class="pesquisar">
+                        <img src="img/search-icon.png" alt="Search">
+                    </button>
+                </div>
+                <div class="header-icons">
+                    <div class="trocar-ling">
+                        <img src="img/flag-uk.png" alt="UK">
+                    </div>
+                    <div class="cart-icon">
+                        <img src="img/user-icon.png" alt="Cart">
+                        <span>CART</span>
+                    </div>
+                    <div class="account-icon">
+                        <img src="img/user-icon.png" alt="Account">
+                        <span>CART</span>
+                    </div>
+                </div>
             </div>
-    </div>
+        </header>
+            <!--DIV DE TODOS OS ITENS-->
+            
+            <div id="itens">
+
+                <!--DIV DAS ROUPAS-->
+                <div class="roupas">
+                    <h1 class="TituloItens">Man & Woman Fashion</h1>
+
+                    <div id="camisa">
+                        <img class="imgItens" src="img/tshirt-img.png" alt="">
+                        <h2 class="nomeProd">Man T-shirt</h2>
+                        <p class="price">Price<p>
+                        <p class="valor"> $ 30</p>
+                    </div>
+                    <div id="camisaSocial">
+                        <img class="imgItens" src="img/dress-shirt-img.png" alt="">
+                        <h2 class="nomeProd">Man-shirt</h2>
+                        <p class="price">Price<p>
+                        <p class="valor"> $ 30</p>
+                    </div>
+                    <div id="vestido">
+                        <img class="imgItens" src="img/women-clothes-img.png" alt="">
+                        <h2 class="nomeProd">Woman Scart</h2>
+                        <p class="price">Price<p>
+                        <p class="valor"> $ 30</p>
+                    </div>
+                </div>
+                
+                <!--DIV DOS ELETRONICOS-->
+                <div class="eletronicos">
+                    <h1 class="TituloItens">Eletronic</h1>
+
+                    <div id="laptop">
+                        <img class="imgItens" src="img/laptop-img.png" alt="">
+                        <h2 class="nomeProd">Laptop</h2>
+                        <p class="price">Start Price<p>
+                        <p class="valor"> $ 100</p>
+                    </div>
+                    <div id="celulares">
+                        <img class="imgItens" src="img/mobile-img.png" alt="">
+                        <h2 class="nomeProd">Mobile</h2>
+                        <p class="price">Start Price<p>
+                        <p class="valor"> $ 100</p>
+                    </div>
+                    <div id="pc">
+                        <img class="imgItens" src="img/computer-img.png" alt="">
+                        <h2 class="nomeProd">Computers</h2>
+                        <p class="price">Start Price<p>
+                        <p class="valor"> $ 100</p>
+                    </div>
+                </div>
+
+                <!--DIV DOS ACESSORIOS-->
+                <div class="acessorios">
+                    <h1 class="TituloItens">Jewellery Accessories</h1>
+
+                    <div id="brincos">
+                        <img class="imgItens" src="img/jhumka-img.png" alt="">
+                        <h2 class="nomeProd">Jumkas</h2>
+                        <p class="price">Start Price<p>
+                        <p class="valor"> $ 100</p>
+                    </div>
+                    <div id="corrente">
+                        <img class="imgItens" src="img/neklesh-img.png" alt="">
+                        <h2 class="nomeProd">Necklaces</h2>
+                        <p class="price">Start Price<p>
+                        <p class="valor"> $ 100</p>
+                    </div>
+                    <div id="aneis">
+                        <img class="imgItens" src="img/kangan-img.png" alt="">
+                        <h2 class="nomeProd">Kangans</h2>
+                        <p class="price">Start Price<p>
+                        <p class="valor"> $ 100</p>
+                    </div>
+                </div>
+            </div>
 </body>
 </html>

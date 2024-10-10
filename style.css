@@ -15,52 +15,113 @@ body {
 header {
     background-color: #333333;
     padding: 10px 0;
+    color: white;
 }
 
-nav {
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-ul li {
-    display: inline;
-}
-
-ul li a {
+.top-nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
 }
 
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+}
+
+.menu-toggle img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.logo-container img {
+    max-width: 150px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.category-dropdown {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-button img {
+    width: 20px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons > div {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-icons img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.header-icons span {
+    color: black;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
-    ul {
+    .top-nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-    ul li a {
-        padding: 15px;
-        text-align: center;
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        flex-direction: column;
         width: 100%;
     }
-}
 
-#Eflyer {
-    max-width: 100%; /* Ajuste para manter o tamanho responsivo */
-    height: auto;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Alinha ao topo */
-    height: 100vh;
-    padding-top: 20px; /* Pequeno espaçamento do topo */
+    .header-icons {
+        margin-top: 10px;
+    }
 }
