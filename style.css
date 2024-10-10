@@ -6,6 +6,10 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-image: url(img/banner-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -48,9 +52,15 @@ ul li a {
     }
 }
 
-#Eflyer{
+#Eflyer {
+    max-width: 100%; /* Ajuste para manter o tamanho responsivo */
+    height: auto;
+}
+
+.container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: orange;
+    align-items: flex-start; /* Alinha ao topo */
+    height: 100vh;
+    padding-top: 20px; /* Pequeno espaçamento do topo */
 }
